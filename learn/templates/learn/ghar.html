@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>blah</title>
+  </head>
+  <body>
+    <h1>checking static data</h1>
+    {% for msg in message %}
+      <h1>{{ msg.sender }} wants to book an appointment with you starting from {{ msg.start_date }}</h1>
+    {% endfor %}
+  </body>
+</html>
